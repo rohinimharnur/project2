@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Digital Watch</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+
+  .clock {
+    background: #010003cc;
+    border-radius: 20px;
+    padding: 40px 80px;
+    box-shadow:
+      0 0 20px #5693af,
+      0 0 40px #00fff7,
+      0 0 60px #00fff7,
+      inset 0 0 10px #00fff7;
+    color: #00fff7;
+    font-size: 5rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+  <div class="clock" id="clock">00:00:00</div>
+ <body style="background-image: url('gb.jpg'); background-size: cover;"></body>
+<script>
+  function updateTime() {
+    const now = new Date();
+    const h = now.getHours().toString().padStart(2,'0');
+    const m = now.getMinutes().toString().padStart(2,'0');
+    const s = now.getSeconds().toString().padStart(2,'0');
+    document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+</body>
+</html>

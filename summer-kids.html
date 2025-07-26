@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kids Dress Gallery - Shop Now</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  body {
+    background: #fffaf0;
+    color: #333;
+    padding: 20px;
+  }
+  header {
+    background: #ff7f50;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255,127,80,0.5);
+  }
+  nav {
+    background: #ffb199;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255,127,80,0.3);
+  }
+  nav a {
+    color: #7a1f3a;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    color: #ff4500;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6347;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.8rem;
+  }
+  .gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 99, 71, 0.6);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .item-details {
+    padding: 1rem 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .item-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #b3335a;
+    margin-bottom: 0.5rem;
+  }
+  .item-price {
+    font-size: 1.2rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .btn-buy {
+    background-color: #b3335a;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn-buy:hover {
+    background-color: #7a1f3a;
+  }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  @media(max-width: 600px) {
+    .gallery-item img {
+      height: 160px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Sunny Kids Dress Gallery
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="collections.html">Collections</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Shop Our Kids Dresses</h1>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Floral Summer Dress" />
+      <div class="item-details">
+        <div class="item-title">Floral Summer Dress</div>
+       
+        <a href="file:///C:/Users/HWLAB-I/Desktop/gallary.html" class="btn-buy">View</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Striped Party Dress" />
+      <div class="item-details">
+        <div class="item-title">Striped Party Dress</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1497048674153-7d490b1dca25?auto=format&fit=crop&w=600&q=80" alt="Ruffled Casual Dress" />
+      <div class="item-details">
+        <div class="item-title">Ruffled Casual Dress</div>
+        <div class="item-price">₹699</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1520962914497-7a8d5f299a26?auto=format&fit=crop&w=600&q=80" alt="Pastel Winter Dress" />
+      <div class="item-details">
+        <div class="item-title">Pastel Winter Dress</div>
+        <div class="item-price">₹850</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Casual Dress" />
+      <div class="item-details">
+        <div class="item-title">Casual Everyday Dress</div>
+        <div class="item-price">₹599</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80" alt="Party Dress" />
+      <div class="item-details">
+        <div class="item-title">Elegant Party Dress</div>
+        <div class="item-price">₹1200</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Pink Dress" />
+      <div class="item-details">
+        <div class="item-title">Pink Princess Dress</div>
+        <div class="item-price">₹1100</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1542068829-1115f7259450?auto=format&fit=crop&w=600&q=80" alt="Blue Summer Dress" />
+      <div class="item-details">
+        <div class="item-title">Blue Summer Dress</div>
+        <div class="item-price">₹850</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- New 8 images start -->
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1508214751196-9e7f2a1e45c6?auto=format&fit=crop&w=600&q=80" alt="Yellow Summer Dress" />
+      <div class="item-details">
+        <div class="item-title">Sunny Yellow Dress</div>
+        <div class="item-price">₹770</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=600&q=80" alt="Green Casual Dress" />
+      <div class="item-details">
+        <div class="item-title">Green Casual Dress</

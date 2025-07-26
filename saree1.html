@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kids Dress Gallery - Shop Now</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  body {
+    background: #fffaf0;
+    color: #333;
+    padding: 20px;
+  }
+  header {
+    background: #222120;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(77, 70, 68, 0.5);
+  }
+  nav {
+    background: #ffb199;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255,127,80,0.3);
+  }
+  nav a {
+    color: #7a1f3a;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    color: #7c716d;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d34f3b;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.8rem;
+  }
+  .gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 99, 71, 0.6);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .item-details {
+    padding: 1rem 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .item-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #b3335a;
+    margin-bottom: 0.5rem;
+  }
+  .item-price {
+    font-size: 1.2rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .btn-buy {
+    background-color: #b3335a;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn-buy:hover {
+    background-color: #7a1f3a;
+  }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  @media(max-width: 600px) {
+    .gallery-item img {
+      height: 160px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  FashionWorld Sarees Gallery
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="collections.html">Collections</a>
+
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Shop Our Sarees</h1>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="saree2.jpg" alt="Green saree" />
+      <div class="item-details">
+        <div class="item-title"> Green saree</div>
+        <div class="item-price">₹500</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree3.jpeg" alt="Linen Sarees" />
+      <div class="item-details">
+        <div class="item-title"> Linen Sarees</div>
+         <div class="item-price">₹1500</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree4.jpeg" alt="Bride Saree" />
+      <div class="item-details">
+        <div class="item-title">Bride Saree</div>
+        <div class="item-price">₹699</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree5.jpg" alt="Cotton Sarees" />
+      <div class="item-details">
+        <div class="item-title">Cotton Sarees</div>
+        <div class="item-price">₹850</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree6.jpg" alt="Fashion Saree" />
+      <div class="item-details">
+        <div class="item-title">Fashion Saree</div>
+        <div class="item-price">₹599</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree7.jpg" alt="Haldi Saree" />
+      <div class="item-details">
+        <div class="item-title">Haldi Saree</div>
+        <div class="item-price">₹1200</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree8.jpg" alt="Green Saree" />
+      <div class="item-details">
+        <div class="item-title">Green Saree</div>
+        <div class="item-price">₹1100</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree9.jpg" alt="Pink Saree" />
+      <div class="item-details">
+        <div class="item-title">Pink Saree</div>
+        <div class="item-price">₹850</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+     <div class="gallery-item">
+      <img src="saree10.jpg" alt="Party Saree" />
+      <div class="item-details">
+        <div class="item-title">Party Saree</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree11.jpg" alt="White Saree" />
+      <div class="item-details">
+        <div class="item-title">White Saree</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+     <div class="gallery-item">
+      <img src="saree12.jpg" alt="Fashion Saree" />
+      <div class="item-details">
+        <div class="item-title">Fashion Saree</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree13.jpg" alt="Silk Saree" />
+      <div class="item-details">
+        <div class="item-title">Silk Saree</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+     <div class="gallery-item">
+      <img src="saree14.jpg" alt="Party Saree" />
+      <div class="item-details">
+        <div class="item-title">Party Saree"</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree15.jpg" alt="Purple Saree" />
+      <div class="item-details">
+        <div class="item-title">Purple Saree</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="saree16.jpg"" alt="Banarasi Saree" />
+      <div class="item-details">
+        <div class="item-title">Banarasi Saree</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+  
+
+</main>
+
+</body>
+</html>

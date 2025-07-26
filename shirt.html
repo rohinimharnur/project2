@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kids Dress Gallery - Shop Now</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  body {
+    background: #fffaf0;
+    color: #333;
+    padding: 20px;
+  }
+  header {
+    background: #222120;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(77, 70, 68, 0.5);
+  }
+  nav {
+    background: #ffb199;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255,127,80,0.3);
+  }
+  nav a {
+    color: #7a1f3a;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    color: #7c716d;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d34f3b;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.8rem;
+  }
+  .gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 99, 71, 0.6);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .item-details {
+    padding: 1rem 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .item-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #b3335a;
+    margin-bottom: 0.5rem;
+  }
+  .item-price {
+    font-size: 1.2rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .btn-buy {
+    background-color: #b3335a;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn-buy:hover {
+    background-color: #7a1f3a;
+  }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  @media(max-width: 600px) {
+    .gallery-item img {
+      height: 160px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  FashionWorld Kids Dress Gallery
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="collections.html">Collections</a>
+
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Shop Our Kids Dresses</h1>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="s14.jpg" alt="Floral Summer Dresses" />
+      <div class="item-details">
+        <div class="item-title"> Summer Dresses</div>
+        <div class="item-price">₹500</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s13.jpg" alt="Party Wear Dresses" />
+      <div class="item-details">
+        <div class="item-title"> Party wear Dress</div>
+         <div class="item-price">₹1500</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s12.jpg" alt="Ruffled Casual Dress" />
+      <div class="item-details">
+        <div class="item-title">Ruffled Casual Dress</div>
+        <div class="item-price">₹699</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s11.jpg" alt="Pastel Winter Dress" />
+      <div class="item-details">
+        <div class="item-title">Pastel Winter Dress</div>
+        <div class="item-price">₹850</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s10.jpg" alt="Casual Dress" />
+      <div class="item-details">
+        <div class="item-title">Casual Everyday Dress</div>
+        <div class="item-price">₹599</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s9.jpg" alt="Party Dress" />
+      <div class="item-details">
+        <div class="item-title">Elegant Party Dress</div>
+        <div class="item-price">₹1200</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s8.jpg" alt="Pink Dress" />
+      <div class="item-details">
+        <div class="item-title">Pink Princess Dress</div>
+        <div class="item-price">₹1100</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s7.jpg" alt="Blue Summer Dress" />
+      <div class="item-details">
+        <div class="item-title">Blue Summer Dress</div>
+        <div class="item-price">₹850</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+     <div class="gallery-item">
+      <img src="s6.jpg" alt="Rainbow Tulle Dress" />
+      <div class="item-details">
+        <div class="item-title">Rainbow Tulle Dress</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s5.jpg" alt="Denim Overall Dress" />
+      <div class="item-details">
+        <div class="item-title">Denim Overall Dress</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+     <div class="gallery-item">
+      <img src="s4.jpg" alt="Rainbow Tulle Dress" />
+      <div class="item-details">
+        <div class="item-title">Rainbow Tulle Dress</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s3.jpg" alt="Denim Overall Dress" />
+      <div class="item-details">
+        <div class="item-title">Denim Overall Dress</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+     <div class="gallery-item">
+      <img src="s2.jpg" alt="Rainbow Tulle Dress" />
+      <div class="item-details">
+        <div class="item-title">Rainbow Tulle Dress</div>
+        <div class="item-price">₹999</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s1.jpg" alt="Denim Overall Dress" />
+      <div class="item-details">
+        <div class="item-title">Denim Overall Dress</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="s15.jpg" alt="Denim Overall Dress" />
+      <div class="item-details">
+        <div class="item-title">Denim Overall Dress</div>
+        <div class="item-price">₹749</div>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+    </div>
+  
+
+    
+</main>
+
+
+</body>
+</html>
